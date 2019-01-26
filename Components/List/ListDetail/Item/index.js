@@ -11,8 +11,8 @@ export default class  extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      totalQuantity:1,
-      totalPrice:parseFloat(this.props.prop.price),
+      totalQuantity:parseFloat(this.props.prop.selectedQuantity),
+      totalPrice:parseFloat(this.props.prop.price)*parseFloat(this.props.prop.selectedQuantity),
       additionalPrice:parseFloat(this.props.prop.price)*0.5
     }
   }

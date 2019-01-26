@@ -17,18 +17,17 @@ class Product extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-      price:4.50,
       quantity:1,
       visible:false,
       added:false
     }
   }
   addQuantity=()=>{
-    this.setState({quantity:this.state.quantity+0.5,price:this.state.price+2.25})
+    this.setState({quantity:this.state.quantity+0.5,})
   }
   reduceQuantity=()=>{
     if (this.state.quantity>1) {
-      this.setState({quantity:this.state.quantity-0.5,price:this.state.price-2.25})
+      this.setState({quantity:this.state.quantity-0.5,})
     }
   }
   handlePopup=()=>{
@@ -46,7 +45,7 @@ class Product extends React.Component {
 
         <Dialog visible={this.state.visible}>
           <DialogContent style={{height:heightScreen*9,width:250}}>
-            <DialogBox funcClose={this.handlePopup}  addListItem={this.addListItem} added={this.state.added}/>
+            <DialogBox funcClose={this.handlePopup}  addListItem={this.addListItem} added={this.state.added} />
           </DialogContent>
         </Dialog>
 

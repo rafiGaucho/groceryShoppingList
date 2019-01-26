@@ -39,6 +39,7 @@ export const addListItem=(data,id,quantity)=>{
    let monthlyList=[]
    itemList.map((item,index)=>{
      if (id === item.productId) {
+       item.selectedQuantity=quantity
        newData.push(item)
      }
    })
