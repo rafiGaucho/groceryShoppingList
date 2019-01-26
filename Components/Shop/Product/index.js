@@ -70,13 +70,13 @@ class Product extends React.Component {
         </View>
 
         <View style={{height:heightScreen*1,flexDirection:'row',alignItems:'center',justifyContent:'center'}}>
-          <View style={{height:heightScreen*1,width:'60%',flexDirection:'row',}}>
+          <View style={{height:heightScreen*1,width:'70%',flexDirection:'row',}}>
 
             <TouchableOpacity onPress={this.reduceQuantity} style={{flex:1,borderTopLeftRadius:heightScreen*0.6,borderBottomLeftRadius:heightScreen*0.6,
               borderWidth:0.5,alignItems:'center',justifyContent:'center'}}>
               <Text style={{fontSize:18}}>-</Text>
             </TouchableOpacity>
-            <View style={{flex:2,borderWidth:0.5,alignItems:'center',justifyContent:'center'}}>
+            <View style={{flex:2.5,borderWidth:0.5,alignItems:'center',justifyContent:'center'}}>
               <Text style={{}}>{this.state.quantity} kg</Text>
             </View>
             <TouchableOpacity onPress={this.addQuantity} style={{flex:1,borderTopRightRadius:heightScreen*0.4,borderBottomRightRadius:heightScreen*0.4,

@@ -14,7 +14,12 @@ Grocery Item Listing And Maintaining Mobile Application
     - cd groceryShoppingList
   - run
     - yarn install or npm install
-    
+
+
+## Second,
+--------
+  - setup the serverAddress in App/Api.js
+  - Define location with sdk.dir in the local.properties file or with an ANDROID_HOME environment variable
 
 ###  Finally,install app on device or emulator
 --------

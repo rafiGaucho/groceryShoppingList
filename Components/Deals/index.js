@@ -14,7 +14,7 @@ export default class  extends React.Component {
   }
   render() {
     return (
-      <View style={{alignItems:'center',justifyContent:'center'}}>
+      <View style={{height:'100%',width:'100%',alignItems:'center',justifyContent:'center'}}>
         <Text>Deals screen</Text>
       </View>
     );
