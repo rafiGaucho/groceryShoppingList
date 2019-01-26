@@ -24,7 +24,11 @@ export const ListItem=(props)=>{
           </View>
           <View style={{flex:1,marginLeft:'5%',flexDirection:'row',alignItems:'center'}}>
             <Icon name='users' type='Entypo' style={{color:'white',fontSize:18}}/>
-            <Text style={{color:'white',marginLeft:'5%'}}>{props.prop.name}</Text>
+            <View style={{flexDirection:'row'}}>
+              {props.prop.names.map((item,index)=>{
+                return   <Text style={{color:'white',marginLeft:'5%'}}>{item}  </Text>
+              })}
+            </View>
           </View>
         </View>
     </TouchableOpacity>
